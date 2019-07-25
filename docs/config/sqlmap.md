@@ -502,7 +502,9 @@ WHERE
 
 | 属性       |    说明   |
 | :--------- | --------:|
-| Statement    | 触发刷新缓存的声明  |
+| Statement    | 触发刷新缓存的声明(格式：[Scope].[StatementId])  |
+
+>在同样的Map里边，Scope可以不用配置 直接填入Id即可
 
 ### Parameter
 
@@ -536,6 +538,7 @@ WHERE
 
 ```
 
+> Map中的Statement通过 Cache关联对应的缓存策略
 
 ## For 标签
 
